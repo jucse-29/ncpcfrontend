@@ -64,10 +64,11 @@ function TopMenu(props) {
                        </Nav>
                    </Navbar.Collapse>
                </Navbar>
-           </Container>
-            {/* AN */}
-            <marquee className="mar" behavior="" direction="">|  NCPC 2023  |  Department of Computer Science and Engineering  |  Jahangirnagar University  |</marquee>
+            
+              {/* AN */}
+              <marquee className="mar" behavior="" direction="" scrollamount="3" >|  NCPC 2023  |  Department of Computer Science and Engineering  |  Jahangirnagar University  |</marquee>
            {/* AN */}
+           </Container>
         </Fragment>
     );
 }

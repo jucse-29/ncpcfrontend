@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext,useState} from 'react';
 import {Button, Col, Row} from "react-bootstrap";
 import FormContext from "./Context/FormContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -19,13 +19,18 @@ import {faImage} from "@fortawesome/free-solid-svg-icons";
 import {faChalkboardUser} from "@fortawesome/free-solid-svg-icons";
 
 function FirstContestant({secondCall,inputChange}) {
+    
+    
+     
 
     const {data} = useContext(FormContext);
+    
 
     return (
         <div className="firstContestant mt-4">
-            <hr/>
+            
             <Row>
+            
                 <Col md={6} sm={12} lg={6}>
                 
                     <label htmlFor="x"><FontAwesomeIcon icon={faPeopleGroup} />     Team Name</label>
@@ -49,6 +54,8 @@ function FirstContestant({secondCall,inputChange}) {
                         onChange={inputChange}
                     />
                 </Col>
+
+
                 
             </Row>
             <hr/>
@@ -100,7 +107,7 @@ function FirstContestant({secondCall,inputChange}) {
                         onChange={inputChange}
                         value={!data.firstUserPhone===""?"":data.firstUserPhone}
                     />
-                    <label for="gender"><FontAwesomeIcon icon={faVenusMars} />    Gender</label><br/>
+                    <label for="gender" className='gendercc'><FontAwesomeIcon icon={faVenusMars} />    Gender</label><br/>
                     <input
                         className="form-check-input"
                         type="radio"
@@ -126,7 +133,7 @@ function FirstContestant({secondCall,inputChange}) {
                         onChange={inputChange}
                         checked={data.firstUserGender==="others"}
                     /> <label htmlFor=""> Others</label><br/>
-                    <label htmlFor=""><FontAwesomeIcon icon={faCalendarDays} />  Date of Birth</label><br/>
+                    <label htmlFor="" className='dateofbirthcss'><FontAwesomeIcon icon={faCalendarDays} />  Date of Birth</label><br/>
                     <input
                         type="date"
                         className="form-control"
@@ -159,7 +166,7 @@ function FirstContestant({secondCall,inputChange}) {
                         <option value="xxl">XXL</option>
                     </select>
 
-                    <label htmlFor="cc"><FontAwesomeIcon icon={faAddressCard} /> Contestant ID</label><br/>
+                    <label htmlFor="cc" className='dateofbirthcss'><FontAwesomeIcon icon={faAddressCard} /> Contestant ID</label><br/>
                     <input
                         type="file"
                         className="form-control"
@@ -168,10 +175,12 @@ function FirstContestant({secondCall,inputChange}) {
                     />
                     {
                         data.firstUserId?(
-                            <div>Your Uploaded File is : {data.firstUserId.name}</div>
-                        ):""
+                            <div className='photoSelect'>Your Uploaded File is : {data.firstUserId.name}</div>
+                        ):(
+                            <div className='photoSelect'>Please select a photo</div>
+                        )
                     }
-                    <label htmlFor="cc"><FontAwesomeIcon icon={faImage} />   Contestant Photo</label><br/>
+                    <label htmlFor="cc" className='dateofbirthcss'><FontAwesomeIcon icon={faImage} />   Contestant Photo</label><br/>
                     <input
                         type="file"
                         className="form-control"
@@ -180,7 +189,7 @@ function FirstContestant({secondCall,inputChange}) {
                     />
                     {
                         data.firstUserPhoto?(
-                            <div>Your Uploaded File is : {data.firstUserPhoto.name}</div>
+                            <div className='photoSelect'>Your Uploaded File is : {data.firstUserPhoto.name}</div>
                         ):""
                     }
                     <div className="nextBtn">

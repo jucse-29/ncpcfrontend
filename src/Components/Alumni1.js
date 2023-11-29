@@ -29,7 +29,13 @@ function Alumni1(props) {
         <Fragment>
             {/* <marquee className="mar" behavior="" direction="">**NCPC CSE JU**</marquee> */}
             <Container fluid="true" className='fullBanneralumni'>
-           
+            <Container fluid="true"  className='bannerRightalumni'>
+            <Container fluid="true" className="alumniDivRight">
+                   <h3 className="alumniTitle"> <FontAwesomeIcon icon={faAward} size="xl"/><span>     </span>ALUMNI SUCCESS STORIES</h3>
+                      <hr/>
+                      <p className="alumniDescription text-start p-3">The Department of Computer Science and Engineering,Jahangirnagar University, has seen a constellation of alumni shining brightly in various programming contests, both nationally and internationally. These individuals have not just secured good positions but have also etched the department's and the university's name in the hall of fame within the tech world.</p>  
+                    </Container>
+            </Container>
             <Container fluid="true" className="topBanneralumni">
                
                 <Row className="p-0 m-0">
@@ -76,13 +82,7 @@ function Alumni1(props) {
                 </Row>
                
             </Container>
-            <Container fluid="true"  className='bannerRightalumni'>
-            <Container fluid="true" className="alumniDivRight">
-                   <h3 className="alumniTitle"> <FontAwesomeIcon icon={faAward} size="xl"/><span>     </span>ALUMNI SUCCESS STORIES</h3>
-                      <hr/>
-                      <p className="alumniDescription text-start p-3">The Department of Computer Science and Engineering,Jahangirnagar University, has seen a constellation of alumni shining brightly in various programming contests, both nationally and internationally. These individuals have not just secured good positions but have also etched the department's and the university's name in the hall of fame within the tech world.</p>  
-                    </Container>
-            </Container>
+           
             
             </Container>
         </Fragment>

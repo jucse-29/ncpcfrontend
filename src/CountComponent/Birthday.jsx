@@ -5,6 +5,7 @@ import rocket from '../Assets/Images/rocket.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faClock} from "@fortawesome/free-solid-svg-icons";
 import { Container } from 'react-bootstrap';
+import Typing from './Typing';
 /*AN*/
 const Birthday = ({day, month }) => {
   const [state, setState] = useState({
@@ -66,13 +67,18 @@ const Birthday = ({day, month }) => {
 
 
   return (
-    <div className='firts-image'>
+    <div className='first-image'>
        <Container fluid="true" className='page'>
      {/* AN */}
       
       <Container fluid="true" className='countdown-NCPC-box'>
+        
       <span><FontAwesomeIcon icon={faClock} beat />  NCPC 2023</span> 
+      <Container className='typing-container'>
+          <Typing/>
+        </Container>
           </Container>
+         
        {/* AN */}
       
       <Countdown countdownData={state}/>

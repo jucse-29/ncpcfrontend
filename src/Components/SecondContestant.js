@@ -75,7 +75,7 @@ function SecondContestant({thirdCall,firstCall,inputChange}) {
                         value={!data.secondUserPhone===""?"":data.secondUserPhone}
 
                     />
-                    <label><FontAwesomeIcon icon={faVenusMars} />    Gender</label><br/>
+                    <label className='dateofbirthcss'><FontAwesomeIcon icon={faVenusMars} />    Gender</label><br/>
                     <input
                         className="form-check-input"
                         type="radio"
@@ -102,7 +102,7 @@ function SecondContestant({thirdCall,firstCall,inputChange}) {
                         checked={data.secondUserGender==="others"}
                     /> <label htmlFor=""> Others</label><br/>
 
-                    <label htmlFor=""><FontAwesomeIcon icon={faCalendarDays} />  Date of Birth</label><br/>
+                    <label htmlFor="" className='dateofbirthcss'><FontAwesomeIcon icon={faCalendarDays} />  Date of Birth</label><br/>
                     <input
                         type="date"
                         className="form-control"
@@ -138,7 +138,7 @@ function SecondContestant({thirdCall,firstCall,inputChange}) {
                         <option value="xxl">XXL</option>
                     </select>
 
-                    <label htmlFor="cc"><FontAwesomeIcon icon={faAddressCard} /> Contestant ID</label><br/>
+                    <label htmlFor="cc" className='dateofbirthcss'><FontAwesomeIcon icon={faAddressCard} /> Contestant ID</label><br/>
                     <input
                         type="file"
                         className="form-control"
@@ -147,12 +147,12 @@ function SecondContestant({thirdCall,firstCall,inputChange}) {
                     />
                     {
                         data.secondUserId?(
-                            <div>Your Uploaded File is : {data.secondUserId.name}</div>
+                            <div className='photoSelect'>Your Uploaded File is : {data.secondUserId.name}</div>
                         ):(
-                            <div></div>
+                            <div className='photoSelect'>Please select a photo</div>
                         )
                     }
-                    <label htmlFor="cc"><FontAwesomeIcon icon={faImage} />   Contestant Photo</label><br/>
+                    <label htmlFor="cc" className='dateofbirthcss'><FontAwesomeIcon icon={faImage} />   Contestant Photo</label><br/>
                     <input
                         type="file"
                         className="form-control"
@@ -161,7 +161,7 @@ function SecondContestant({thirdCall,firstCall,inputChange}) {
                     />
                     {
                         data.secondUserPhoto?(
-                            <div>Your Uploaded File is : {data.secondUserPhoto.name}</div>
+                            <div className='photoSelect'>Your Uploaded File is : {data.secondUserPhoto.name}</div>
                         ):(
                             <div></div>
                         )

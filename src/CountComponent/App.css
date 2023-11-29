@@ -5,17 +5,23 @@
 .page {
   width: 100%;
   /* height: 80vh; */
- /*AN*/ height: 39vh;/*AN*/
+ /*AN*/ height: 49vh;/*AN*/
   display: flex;
   /* flex-direction: column; */
-  flex-direction: row;/*AN*/
+  flex-direction: column;/*AN*/
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   text-align: center; 
-  background-color: white;
+  background-color: #010f29; 
+  /* border: 1px solid silver; */
  
-  
 }
+
+.typing-container{
+  color: #a6b1e1;
+  font-size: 21px;
+}
+
 /*AN*/
 
 /*AN*/
@@ -30,10 +36,11 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0px 0;
+  justify-content: space-between;
+  margin-left: 5%;
+
 }
-.countdown-box {
+/* .countdown-box {
   background-color: #413c69;
   font-size: 50px;
   font-weight: 700;
@@ -49,79 +56,112 @@
   text-align: center;
   box-shadow: 0 0 2px 7px rgba(255, 255, 255, 0.7);
   animation: changeColor 1.5s linear infinite;
-}
-@keyframes changeColor {
+} */
+/* @keyframes changeColor {
   0%, 100% {
-    background-color: #413c69; /* Initial color */
+    background-color: #413c69; 
     color: #dcd6f7;
   }
   20% {
-    background-color: #070424; /* Initial color */
+    background-color: #070424; 
     color: #dcd6f7;
   }
-}
-/*AN*/
-.countdown-NCPC-box{
-  background-color: #413c69;
-  font-size: 50px;
+} */
+.countdown-box {
+  font-size: 30px;
   font-weight: 700;
   color: #dcd6f7;
   border-radius: 11px;
-  width: 460px;
-  height: 160px;
-  margin: 14px;
+  width: 80px;
+  height: 85px;
+  margin-top: 10%;
+
+  padding:1%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  box-shadow: 0 0 2px 7px rgba(255, 255, 255, 0.7);
- 
+  box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.7);
+  animation: colorChange 2.5s infinite; /* Apply the colorChange animation */
+}
+@keyframes colorChange {
+  0% {
+    background-color:#413c69;
+  }
+  50% {
+    background-color:rgb(3, 1, 48);
+  }
+  100% {
+    background-color: #413c69;
+  }
+}
+
+/*AN*/
+.countdown-NCPC-box{
+  background-color: #413c69;
+  font-size: 40px;
+  font-weight: 590;
+  color: #dcd6f7;
+  border-radius: 9px;
+  width: 390px;
+  height: 100px;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.7);
+  padding:4%;
   
 }
 
 @media (max-width: 768px) {
   .page{
     height:100vh;
-    background-color:navy;
+    background-color: #010f29;
   }
   .countdown-NCPC-box {
-    width: 80%; 
+    width: 90%; 
     height: 120px; 
     font-size: 30px; 
     box-shadow: 0 0 2px 7px rgba(255, 255, 255, 0.7);
+    padding:8%;
   }
   .countdown-box {
     width: 80%; 
     height: 85px; /*AN*/
     font-size: 30px; 
     box-shadow: 0 0 2px 7px rgba(255, 255, 255, 0.7);
-   
+    padding:8%;
   } 
 }
 
 @media (max-width: 1268px) {
   .page{
     height:137vh;
-    background-color: white;
+    background-color: #010f29;
   }
   .countdown-NCPC-box {
-    width: 60%; 
-    height: 100px; 
+    width: 690px; 
+    height: 110px; 
     font-size: 30px; 
     box-shadow: 0 0 2px 7px rgba(255, 255, 255, 0.7);
+    padding:6%;
   }
   .countdown-box {
     width: 60%; 
     height: 120px; /*AN*/
     font-size: 30px; 
     box-shadow: 0 0 2px 7px rgba(255, 255, 255, 0.7);
+    padding:8%;
    
   } 
 }
 /*AN*/
 .legend {
-  font-size: 30px;
+  font-size: 16px;
   color: #a6b1e1;
 }
 .wish-message {
@@ -212,7 +252,7 @@ a {
   font-size: 400;
 }
 
-.count_time{
+.first-image{
   background-image:url('../Assets/Images/Galaxy.jpg');
   
 }

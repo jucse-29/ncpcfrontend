@@ -46,9 +46,17 @@ function Honor(props) {
                         <Carousel className='carouselVideo'>
       <Carousel.Item>
         <div >
-        <iframe width="400" height="315" src="https://www.youtube.com/embed/bC4kQ2-kHZE?si=YNCq8mEbLr2EOU7P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe className='carouselVideoframe'width="320" height="315" src="https://www.youtube.com/embed/bC4kQ2-kHZE?si=YNCq8mEbLr2EOU7P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <div className="carouselCaptionSpeech">
-            <h6>Professor Dr. Md. Nurul Alam , Vice Chancellor</h6>
+            <h6>Abraham Lincoln</h6>
+          </div>
+        </div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div >
+        <iframe width="320" height="315" src="https://www.youtube.com/embed/UF8uR6Z6KLc?si=vqzt33t2fjHVALCL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div className="carouselCaptionSpeech">
+            <h6>Steve Jobs</h6>
           </div>
         </div>
       </Carousel.Item>

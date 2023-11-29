@@ -29,7 +29,7 @@ function ThirdContestant({fourthCall,secondCall,inputChange}) {
             <hr/>
             <Row>
                 <Col md={6} sm={12} lg={6}>
-                    <label htmlFor="x">First Name</label>
+                    <label htmlFor="x"><FontAwesomeIcon icon={faFileSignature} />   First Name</label>
                     <input
                         type="text"
                         placeholder="First Name"
@@ -75,7 +75,7 @@ function ThirdContestant({fourthCall,secondCall,inputChange}) {
                         value={!data.thirdUserPhone===""?"":data.thirdUserPhone}
 
                     />
-                    <label><FontAwesomeIcon icon={faVenusMars} />    Gender</label><br/>
+                    <label className='dateofbirthcss'><FontAwesomeIcon icon={faVenusMars} />    Gender</label><br/>
                     <input
                         className="form-check-input"
                         type="radio"
@@ -92,7 +92,7 @@ function ThirdContestant({fourthCall,secondCall,inputChange}) {
                         onChange={inputChange}
                         checked={data.thirdUserGender==="female"}
                     /> <label htmlFor=""> Female</label><br/>
-                    <label htmlFor=""><FontAwesomeIcon icon={faCalendarDays} />  Date of Birth</label><br/>
+                    <label htmlFor="" className='dateofbirthcss'><FontAwesomeIcon icon={faCalendarDays} />  Date of Birth</label><br/>
                     <input
                         type="date"
                         className="form-control"
@@ -128,7 +128,7 @@ function ThirdContestant({fourthCall,secondCall,inputChange}) {
                         <option value="xxl">XXL</option>
                     </select>
 
-                    <label htmlFor="cc"><FontAwesomeIcon icon={faAddressCard} /> Contestant ID</label><br/>
+                    <label htmlFor="cc" className='dateofbirthcss'><FontAwesomeIcon icon={faAddressCard} /> Contestant ID</label><br/>
                     <input
                         type="file"
                         className="form-control"
@@ -137,12 +137,12 @@ function ThirdContestant({fourthCall,secondCall,inputChange}) {
                     />
                     {
                         data.thirdUserId?(
-                            <div>Your Uploaded File is : {data.thirdUserId.name}</div>
+                            <div className='photoSelect'>Your Uploaded File is : {data.thirdUserId.name}</div>
                         ):(
-                            <div>Please select a photo</div>
+                            <div className='photoSelect'>Please select a photo</div>
                         )
                     }
-                    <label htmlFor="cc"><FontAwesomeIcon icon={faImage} />   Contestant Photo</label><br/>
+                    <label htmlFor="cc" className='dateofbirthcss'><FontAwesomeIcon icon={faImage} />   Contestant Photo</label><br/>
                     <input
                         type="file"
                         className="form-control"
@@ -151,7 +151,7 @@ function ThirdContestant({fourthCall,secondCall,inputChange}) {
                     />
                     {
                         data.thirdUserPhoto?(
-                            <div>Your Uploaded File is : {data.thirdUserPhoto.name}</div>
+                            <div className='photoSelect'>Your Uploaded File is : {data.thirdUserPhoto.name}</div>
                         ):(
                             <div></div>
                         )

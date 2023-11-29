@@ -7,6 +7,7 @@ import TeacherData from "./TeacherData";
 import axios from "axios";
 import FormContext from "./Context/FormContext";
 
+
 function RegiForm() {
 
     const {data,setData,first,setFirst,second,setSecond,third,setThird,fourth,setFourth} = useContext(FormContext);
@@ -28,7 +29,7 @@ function RegiForm() {
 
     const postDataToBackend = (e) => {
         e.preventDefault();
-
+        
         const emptyFields = Object.entries(data).filter(([key, value]) => {
             return value === "" || value === null || value === undefined;
         });

@@ -122,11 +122,12 @@
 .mar{
     background-color: rgba(0,0,0,0.1);
     /* margin-bottom: 2px; */
-    /*AN*/padding:4px; 
+    /*AN*/padding:3px; 
     color:#0c2571;
     text-transform: capitalize;
     text-shadow: #080707;
     font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
     
    
     /*AN*/
@@ -135,21 +136,23 @@
     /* margin-top: -5px; */
   
     width:65%;
+    border:0px solid rgb(97, 94, 94);
 }
 
 .fullBanner{
     display: flex;
     flex-direction: row;
     justify-content: start;
+    
 }
 .bannerRight{
-    width: 17.5%;
+    width: 35%;
     height: auto;
     background:#010f29;
     text-align: center;
-    border:2px solid black;
+    border:1px solid rgb(97, 94, 94);
     /* margin-left:2%; */
-    padding-top: 3%;
+    
     padding-left:1.5%;
     padding-right: 1.5%;
     color:silver;
@@ -158,20 +161,22 @@
     align-items: center;
 }
 .bannerRight img{
-    width:100%;
+    width:99%;
     height:auto;
 }
 .bannerRight h3{
-margin:7%;
 font-weight: 500;
 letter-spacing: 1PX;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 .buttonBanner {
-    width:110% !important;
-
+    width:50% !important;
+    height: 70% !important;
+    margin: 0 !important;;
+    padding: 0!important;
     font-size: small;
+    margin-bottom: 8%!important;
   }
 .jucselogoBanner{
     
@@ -184,6 +189,35 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     margin-top:1% !important;
 }
 
+.hostedbyDiv{
+    width:200px;
+    height: 100px;
+    background-color: white;
+    
+}
+.hostedbyDiv h1{
+    color:#021d50;
+    font-weight: 700;
+    margin-bottom: 0;
+   
+}
+.hostedbyDiv img{
+    height:40%;
+   
+}
+.hostedbyDiv h5{
+    color:#0e047d;
+    font-weight: 500;
+ 
+}
+
+
+.hostedbyDiv h6{
+    color:rgb(255, 0, 0);
+    font-weight: 300;
+  
+   
+}
 
 /*AN*/.card-carousel{
     height: auto!important;
@@ -315,10 +349,10 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 .noticeDivLeft{
-    background-color: rgb(0, 0, 0,0.9);
-    color:silver;
+    background-color:  rgb(29, 52, 40);
+    color:rgb(219, 216, 216);
     border-radius: .5%;
-    border:5px solid rgb(10, 10, 10);
+    border:1px solid rgb(10, 10, 10);
   
 }
 
@@ -347,6 +381,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 
 .noticeDivRightheading{
     background-color:rgb(41, 97, 3);
+   
     border-radius: 1%;
     color:white;
     margin-right:2%;
@@ -363,7 +398,8 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     margin-left: 5%;
     margin-top: 5%;
     padding-top:4%;
-    background-color: rgb(22, 21, 21);
+    /* background-color: rgb(22, 21, 21); */
+    background-color:  rgb(29, 52, 40);
     color:silver;
     border-radius: 2%;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
@@ -410,7 +446,8 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 .noticeDivRight hr{
  margin-right: 4%;
  margin-left: 3%;
- color:green;
+ /* color:green; */
+ 
  border:4px solid green;
 }
 
@@ -570,6 +607,12 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     
 }
 
+.carouselVideo:hover{
+    cursor: pointer;
+}
+.carouselVideoframe:hover{
+    cursor:pointer;
+}
 .fullBanneralumni{
     display: flex;
     flex-direction: row;
@@ -583,8 +626,9 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     text-align: center;
     border:2px solid black;
     /* margin-left:2%; */
-    padding-top: 3%;
-    padding-left:1.5%;
+    padding-top: 1.5%;
+    padding-left:2.5%;
+   
     padding-right: 1.5%;
     color:silver;
     display: flex;
@@ -594,6 +638,10 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 .bannerRightalumni img{
     width:30%;
     height:auto;
+}
+.jucselogoBanner11{
+    width: 80%;
+    HEIGHT: 170px!important;
 }
 .bannerRightalumni h3{
 margin:7%;
@@ -634,7 +682,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 .carouselImgalumni{
     width: 80%;
-    height: 550px;
+    height: 560px;
 }
 
 .carouselItemContaineralumni .carouselCaptionalumni {
@@ -668,7 +716,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 .alumniDivRight{
   
     background-color: rgb(117, 117, 173);
-    margin:5%;
+    margin:3%;
     color:rgb(255, 255, 255);
     border-radius: 2%;
     text-align: center;
@@ -719,4 +767,76 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 
 .alumniDescription{
     text-align: justify!important;
+}
+
+.nextBtn{
+    text-align: right;
+}
+.nextBtn Button{
+    background-color: gray!important;
+    width: 80px !important;
+    font-family: Montserrat, serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.backBtn{
+    background-color: gray!important;
+    width: 80px !important;
+    font-family: Montserrat, serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.nextBtn2{
+    position: absolute!important;
+    background-color: gray!important;
+    width: 80px !important;
+    font-family: Montserrat, serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    right: 16%!important;
+}
+.topBannerTest{
+    margin-top: -5px;
+}
+.bannerRightTest{
+    
+    height: 450px;
+    background-color:#010f29;
+    text-align: center;
+    
+    /* margin-left:2%; */
+    padding-top: 10%;
+    padding-left:1.5%;
+    color:silver;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardTest{
+    height: 450px!important;
+    border-radius: 0!important;
+    text-align: center;
+    background-color: #010f29;
+}
+
+.bannerRightalumniTest h3{
+    margin:7%;
+    font-weight: 800 !important;
+    letter-spacing: 1PX;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+    
+  .buttonBannerTest {
+    width:70% !important;
+
+    font-size: small;
+  }
+  .bannerRightTest img{
+    width:90%;
+    height:auto;
 }

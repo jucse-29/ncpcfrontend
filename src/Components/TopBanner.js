@@ -10,6 +10,8 @@ import lab from "../Assets/Images/dept/lab_201.png";
 import green from "../Assets/Images/dept/green.png";
 import ncpclogo from "../Assets/Images/Untitled.png";
 import cse from "../Assets/Images/dept/Untitled - Copy.png";
+import finalcse from "../Assets/Images/dept/finalcse.png";
+import finalcse1 from "../Assets/Images/dept/finalcse1.png";
 import mh from "../Assets/Images/dept/mh.png";
 import night from "../Assets/Images/dept/night.png";
 import jucse from "../Assets/Images/dept/ju_cse.png";
@@ -17,19 +19,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faShare} from "@fortawesome/free-solid-svg-icons";
 import {faHandPointer} from "@fortawesome/free-solid-svg-icons";
 import {faReply} from "@fortawesome/free-solid-svg-icons";
+import Count from "../Components/Count";
+
+import Typed from 'react-typed';
 
 function TopBanner(props) {
+    
     return (
         <Fragment>
+             
             {/* <marquee className="mar" behavior="" direction="">**NCPC CSE JU**</marquee> */}
             <Container fluid="true" className='fullBanner'>
-            <Container fluid="true" className='bannerRight'>
-                <h3>NCPC 2023</h3>
+            {/* <Container fluid="true" className='bannerRight'>
+              
+                
+                <h3> NCPC 2023
+               </h3>
                 <img className="jucselogoBanner1" src={ncpclogo} alt="" />
                 
-                {/* <img className="jucselogoBanner"src={jucse} alt="" /> */}
+                
                 <Button className="buttonBanner" variant="danger"><FontAwesomeIcon icon={faShare} beat size='xl'/> Register Now</Button>
-            </Container>
+            </Container> */}
             <Container fluid="true" className="topBanner">
                
                 <Row className="p-0 m-0">
@@ -85,11 +95,17 @@ function TopBanner(props) {
                
             </Container>
             <Container fluid="true" className='bannerRight'>
-            <h3>Hosted By</h3>
-                <img className="jucselogoBanner1" src={cse} alt="" />
-                
-                {/* <img className="jucselogoBanner"src={jucse} alt="" /> */}
+                <Count/>
+            
                 <Button className='buttonBanner' variant="danger">Register Now  <FontAwesomeIcon icon={faReply} beat size='xl'/></Button>
+                
+                <h3>Hosted By</h3>
+              
+            {/* <div className='hostedbyDiv'> */}
+                <h6>Department of Computer Science and Engineering</h6>
+                <h6>Jahangirnagar University</h6>
+                {/* <img src={jucse} alt="" /> */}
+                {/* </div> */}
             </Container>
            
             </Container>
@@ -98,4 +114,3 @@ function TopBanner(props) {
 }
 
 export default TopBanner;
-
