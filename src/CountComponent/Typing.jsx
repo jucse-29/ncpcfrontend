@@ -4,7 +4,7 @@ import '../CountComponent/App.css';
 const Typing = () => {
   return (
     <Typed className='typing'
-      strings={['Registration Going on!!', 'Register Fast!!','Think | Strategize | Code']}
+      strings={['Think | Strategize | Code','Registration Going on!!', 'Register Fast!!']}
       typeSpeed={50}
       backSpeed={30}
       loop

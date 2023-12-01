@@ -48,7 +48,7 @@ function Alumni1(props) {
                                     <img className="carouselImgalumni" src={fifteen} alt=""/>
                                     <div className="carouselCaptionalumni">
                                         <h3>JU_Assassins</h3>
-                                        <p>Aninda Majumder(CSE), Md. Nafis Sadique(IIT), Suman Bhadra(CSE) participated in ACM-ICPC 2015 World Finals and solved 6 problems.</p>
+                                        <p>Aninda Majumder(CSE), Md. Nafis Sadique(IIT), Suman Bhadra(CSE) participated at the ACM-ICPC 2015 World Finals and solved 6 problems.</p>
                                         {/* <Button className="contactBtn">See More</Button> */}
                                     </div>
                                 </div>
@@ -69,7 +69,7 @@ function Alumni1(props) {
                                     <img className="carouselImgalumni" src={img1} alt=""/>
                                     <div className="carouselCaptionalumni">
                                     <h3>JU_kzvd4729</h3>
-                <p>JU_kzvd4729 led by Mahmudul Hasan Shanto(CSE-46), Richita Khandakar Rifat(CSE-46) and Alif Al Hasan(CSE-47) secured 3rd place at ICPC Regional 2021.</p>
+                <p>JU_kzvd4729 led by Mahmudul Hasan Shanto(CSE-46), Richita Khandakar Rifat(CSE-46) and Alif Al Hasan(CSE-47) secured 3rd place at the 2021 ICPC Asia Regional Dhaka Contest.</p>
                                         {/* <Button className="contactBtn">See More</Button> */}
                                     </div>
                                 </div>

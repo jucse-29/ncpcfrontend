@@ -6,7 +6,7 @@ function Gallery(props) {
         <Fragment>
             {/* <marquee className="mar" behavior="" direction="">**NCPC CSE JU**</marquee> */}
            
-                <Row className="p-0 m-0">
+                <Row className="rowGallery p-0 m-0">
 
                     <Col className="m-0 p-0">
                         <Carousel className="card-carousel-gallery">

@@ -91,7 +91,16 @@ function ThirdContestant({fourthCall,secondCall,inputChange}) {
                         name="thirdUserGender"
                         onChange={inputChange}
                         checked={data.thirdUserGender==="female"}
-                    /> <label htmlFor=""> Female</label><br/>
+                    /> <label htmlFor=""> Female</label>
+                    
+                    <input
+                        className="form-check-input mx-1"
+                        type="radio"
+                        value="others"
+                        name="secondUserGender"
+                        onChange={inputChange}
+                        checked={data.secondUserGender==="others"}
+                    /> <label htmlFor=""> Others</label><br/>
                     <label htmlFor="" className='dateofbirthcss'><FontAwesomeIcon icon={faCalendarDays} />  Date of Birth</label><br/>
                     <input
                         type="date"

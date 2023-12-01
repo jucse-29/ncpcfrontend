@@ -73,7 +73,7 @@ const Birthday = ({day, month }) => {
       
       <Container fluid="true" className='countdown-NCPC-box'>
         
-      <span><FontAwesomeIcon icon={faClock} beat />  NCPC 2023</span> 
+      <span><FontAwesomeIcon icon={faClock} size="sm" beat />  NCPC 2023</span> 
       <Container className='typing-container'>
           <Typing/>
         </Container>

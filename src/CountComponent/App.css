@@ -14,12 +14,13 @@
   text-align: center; 
   background-color: #010f29; 
   /* border: 1px solid silver; */
+  
  
 }
 
 .typing-container{
   color: #a6b1e1;
-  font-size: 21px;
+  font-size: 19px;
 }
 
 /*AN*/
@@ -37,7 +38,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+  
 
 }
 /* .countdown-box {
@@ -71,11 +74,11 @@
   font-size: 30px;
   font-weight: 700;
   color: #dcd6f7;
-  border-radius: 11px;
+  border-radius: 9px;
   width: 80px;
   height: 85px;
-  margin-top: 10%;
-
+  margin-top: 5%;
+  margin-bottom: 0%;
   padding:1%;
   display: flex;
   flex-direction: column;
@@ -83,7 +86,7 @@
   align-items: center;
   text-align: center;
   box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.7);
-  animation: colorChange 2.5s infinite; /* Apply the colorChange animation */
+  animation: colorChange 1s infinite; /* Apply the colorChange animation */
 }
 @keyframes colorChange {
   0% {
@@ -99,11 +102,12 @@
 
 /*AN*/
 .countdown-NCPC-box{
-  background-color: #413c69;
+  
+  background-color: #010f29; 
   font-size: 40px;
-  font-weight: 590;
+  font-weight: 540;
   color: #dcd6f7;
-  border-radius: 9px;
+  /* border-radius: 7px; */
   width: 390px;
   height: 100px;
   margin: 1%;
@@ -112,33 +116,13 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.7);
+  
   padding:4%;
   
 }
 
-@media (max-width: 768px) {
-  .page{
-    height:100vh;
-    background-color: #010f29;
-  }
-  .countdown-NCPC-box {
-    width: 90%; 
-    height: 120px; 
-    font-size: 30px; 
-    box-shadow: 0 0 2px 7px rgba(255, 255, 255, 0.7);
-    padding:8%;
-  }
-  .countdown-box {
-    width: 80%; 
-    height: 85px; /*AN*/
-    font-size: 30px; 
-    box-shadow: 0 0 2px 7px rgba(255, 255, 255, 0.7);
-    padding:8%;
-  } 
-}
-
-@media (max-width: 1268px) {
+/*AI*/
+@media only screen and (max-width: 1025px) {
   .page{
     height:137vh;
     background-color: #010f29;
@@ -147,7 +131,7 @@
     width: 690px; 
     height: 110px; 
     font-size: 30px; 
-    box-shadow: 0 0 2px 7px rgba(255, 255, 255, 0.7);
+   
     padding:6%;
   }
   .countdown-box {
@@ -155,10 +139,239 @@
     height: 120px; /*AN*/
     font-size: 30px; 
     box-shadow: 0 0 2px 7px rgba(255, 255, 255, 0.7);
-    padding:8%;
+    padding:1%;
+    margin-bottom: 10%;
    
   } 
 }
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .countdown-NCPC-box{
+    background-color: #010f29;
+    font-size: 40px;
+    font-weight: 590;
+    color: #dcd6f7;
+    border-radius: 9px;
+    width: 490px;
+    height: 100px;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    padding:4%;
+    
+  }
+
+  .countdown-box {
+    width: 80%; 
+    height: 85px; /*AN*/
+    font-size: 30px; 
+    box-shadow: 0 0 2px 7px rgba(255, 255, 255, 0.7);
+    padding:8%;
+  } 
+
+  .countdown-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .countdown-NCPC-box{
+    background-color: #010f29;
+    font-size: 30px;
+    font-weight: 590;
+    color: #dcd6f7;
+    border-radius: 9px;
+    width: 300px;
+    height: 100px;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    padding:4%;
+    
+  }
+
+  .countdown-box {
+    width: 80%; 
+    height: 85px; /*AN*/
+    font-size: 30px; 
+    box-shadow: 0 0 2px 7px rgba(255, 255, 255, 0.7);
+    padding:8%;
+  } 
+
+  .countdown-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*AI*/
+@media (max-width: 468px) {
+  .page{
+    height:96vh;
+    background-color: #010f29;  
+    margin-top:0%;
+    margin-bottom: 0%;
+  }
+  .countdown-wrapper {
+   width: 100%;
+   justify-content: space-around;
+  
+  
+  }
+  .countdown-NCPC-box {
+    width: 120%;
+    height: 10%; 
+    font-size: 15px; 
+    border:none!important;
+  
+    padding:1%;
+  }
+  .countdown-box {
+    width: 70%; 
+    height: 14%; 
+    font-size: 22px; 
+    box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.7);
+    padding:8%;
+    margin-bottom: 0%;
+    
+   
+  } 
+  .typing-container{
+    color: #a6b1e1;
+    font-size: 14px;
+  }
+
+}
+
+
+@media (max-width: 668px) {
+  .page{
+    height:96vh;
+    background-color: #010f29;  
+    margin-top:0%;
+    margin-bottom: 0%;
+  }
+  .countdown-wrapper {
+   width: 100%;
+   justify-content: space-around;
+  
+  
+  }
+  .countdown-NCPC-box {
+    width: 120%;
+    height: 10%; 
+    font-size: 15px; 
+    border:none!important;
+    
+    padding:1%;
+  }
+  .countdown-box {
+    width: 70%; 
+    height: 14%; 
+    font-size: 22px; 
+    box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.7);
+    padding:8%;
+    margin-bottom: 0%;
+    
+   
+  } 
+  .typing-container{
+    color: #a6b1e1;
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .page{
+    height:80vh;
+    background-color: #010f29;  
+    margin-top:0%;
+    margin-bottom: 0%;
+  }
+  .countdown-wrapper {
+   width: 100%;
+   justify-content: space-around;
+   
+  
+  
+  }
+  .countdown-NCPC-box {
+    width: 120%;
+    height: 10%; 
+    font-size: 15px; 
+    border:none!important;
+    
+    padding:1%;
+  }
+  .countdown-box {
+    width: 70%; 
+    height: 14%; 
+    font-size: 22px; 
+    box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.7);
+    padding:8%;
+    margin-bottom: 0%;
+    
+   
+  } 
+  .typing-container{
+    color: #a6b1e1;
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 868px) {
+  .page{
+    height:96vh;
+    background-color: #010f29;  
+    margin-top:0%;
+    margin-bottom: 0%;
+  }
+  .countdown-wrapper {
+   width: 100%;
+   justify-content: space-around;
+  
+  
+  }
+  .countdown-NCPC-box {
+    width: 120%;
+    height: 10%; 
+    font-size: 15px; 
+    border:none!important;
+    
+    padding:1%;
+  }
+  .countdown-box {
+    width: 70%; 
+    height: 14%; 
+    font-size: 22px; 
+    box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.7);
+    padding:8%;
+    margin-bottom: 0%;
+    
+   
+  } 
+  .typing-container{
+    color: #a6b1e1;
+    font-size: 14px;
+  }
+
+}
+
+
 /*AN*/
 .legend {
   font-size: 16px;
@@ -169,7 +382,7 @@
   font-weight: 700;
 }
 .birthdate {
-  font-size: 25px;
+  font-size: 5px;
   font-weight: 600;
   color: #7f78d2;
 }

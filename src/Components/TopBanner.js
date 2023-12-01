@@ -1,8 +1,6 @@
 import React, {Fragment} from 'react';
 import {Button, Card, Carousel, Col, Container, Row} from "react-bootstrap";
-import img1 from "../Assets/Images/alumni_photos/first.png";
-import img2 from "../Assets/Images/alumni_photos/second.png";
-import img5 from "../Assets/Images/alumni_photos/5.png";
+
 import sem from "../Assets/Images/dept/seminar.png";
 import s_minar from "../Assets/Images/dept/shaheed_minar.png";
 import champs_ncpc from "../Assets/Images/alumni_photos/ncpc_champion.png";
@@ -97,13 +95,19 @@ function TopBanner(props) {
             <Container fluid="true" className='bannerRight'>
                 <Count/>
             
-                <Button className='buttonBanner' variant="danger">Register Now  <FontAwesomeIcon icon={faReply} beat size='xl'/></Button>
+                <Button className='buttonBanner' variant="danger">Register Now  <FontAwesomeIcon icon={faReply} /></Button>
                 
-                <h3>Hosted By</h3>
+                <h3>
+                    <Typed
+          strings={['Hosted By']}
+          typeSpeed={50}
+          backSpeed={30}
+          loop
+        /></h3>
               
             {/* <div className='hostedbyDiv'> */}
-                <h6>Department of Computer Science and Engineering</h6>
-                <h6>Jahangirnagar University</h6>
+                <h5>Department of Computer Science and Engineering <br/>(CSE)</h5>
+                <p>Jahangirnagar University</p>
                 {/* <img src={jucse} alt="" /> */}
                 {/* </div> */}
             </Container>

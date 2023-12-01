@@ -22,9 +22,9 @@ function Footer(props) {
                     <a href="https://www.juniv.edu/department/cse" target="_self">Department of Computer Science & Engineering<br/>
                     Jahangirnagar University, Savar, Dhaka-1342</a><br/>
                     <span><FontAwesomeIcon icon={faPhoneVolume}/> 01824340471</span>
-                    <span className="mx-3"><FontAwesomeIcon icon={faEnvelope}/> @gmail.com</span>
+                    <span className="mx-3"><FontAwesomeIcon icon={faEnvelope}/> jucse_ncpc2023@gmail.com</span>
                     <div className="iconDiv">
-                        <a className="contactLink mx-1" href="#a"><FontAwesomeIcon icon={faFacebook}/> </a>
+                        <a className="contactLink mx-1" href="https://www.facebook.com/groups/1406720813273322"><FontAwesomeIcon icon={faFacebook}/> </a>
                         <a className="contactLink mx-1" href="#a"><FontAwesomeIcon icon={faTwitter}/> </a>
                         <a className="contactLink mx-1" href="#a"><FontAwesomeIcon icon={faInstagram}/> </a>
                         <a className="contactLink mx-1" href="#a"><FontAwesomeIcon icon={faLinkedin}/> </a>
