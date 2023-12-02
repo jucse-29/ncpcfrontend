@@ -27,7 +27,7 @@ jobs:
         with:
           host: ${{ secrets.DIGITAL_OCEAN_IP }}
           username: ${{ secrets.DIGITAL_OCEAN_USER_NAME }}
-          key: ${{ secrets.DIGITAL_OCEAN_DEPLOY_KEY }}
+          password: ${{ secrets.DIGITAL_OCEAN_DEPLOY_KEY }}
           port: 22
           script: |
             cd /path/to/your/react/app
@@ -35,3 +35,4 @@ jobs:
             npm install
             npm run build
             sudo mv build /var/www/html/ncpcfrontend
+        
