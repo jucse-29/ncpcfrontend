@@ -27,11 +27,9 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          host: ${{ secrets.DIGITAL_OCEAN_IP }}
+          server: ${{ secrets.DIGITAL_OCEAN_IP }}
           username: ${{ secrets.DIGITAL_OCEAN_USER_NAME }}
           password: ${{ secrets.DIGITAL_OCEAN_DEPLOY_KEY }}
           port: 22
-          script: |
-            git pull origin main
-            npm install
-            npm run build
+          local-dir: build  # Adjust this based on your project structure
+          server-dir: /var/www/html/ncpcfrontend
