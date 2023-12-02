@@ -30,7 +30,7 @@ function TopBanner(props) {
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                 <img className="carouselImg" src={champs_ncpc}alt=""/>
+                                 <img className="carouselImg" src={champs_ncpc} alt=""/>
                                 <Carousel.Caption>
                                     <Button className="contactBtn">Register Now <FontAwesomeIcon icon={faHandPointer} beat /></Button>
                                 </Carousel.Caption>
@@ -57,12 +57,12 @@ function TopBanner(props) {
                     </Col>
                 </Row>
             </Container>
-            <Container fluid="true" className='bannerRight'>
-                <Count/>
-                <Button className='buttonBanner' variant="danger">Register Now  <FontAwesomeIcon icon={faReply} /></Button>
-                <h5>Department of Computer Science and Engineering <br/>(CSE)</h5>
-                <p>Jahangirnagar University</p>
-            </Container>
+                <Container fluid="true" className='bannerRight'>
+                    <Count/>
+                    <Button className='buttonBanner' variant="danger">Register Now  <FontAwesomeIcon icon={faReply} /></Button>
+                    <h5>Department of Computer Science and Engineering <br/>(CSE)</h5>
+                    <p>Jahangirnagar University</p>
+                </Container>
             </Container>
         </Fragment>
     );

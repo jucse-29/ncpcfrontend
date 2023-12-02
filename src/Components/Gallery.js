@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
-import {Button, Card, Carousel, Col, Container, Row} from "react-bootstrap";
-import GalleryCSS from '../Assets/CSS/GalleryCSS.css';
+import {Button,Carousel, Col, Row} from "react-bootstrap";
+
 function Gallery(props) {
     return (
         <Fragment>

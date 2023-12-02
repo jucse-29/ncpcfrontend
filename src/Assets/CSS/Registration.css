@@ -3,10 +3,9 @@
     padding: 5% 12% 5% 12%;
 }
 .formBorder{
-    background-color:rgb(255, 253, 253);
     box-shadow: 0 0 4px 4px rgba(57, 57, 57, 0.7);
-    background: linear-gradient(to bottom, rgb(9, 172, 172) 12.5%,  rgb(255, 254, 254) 12.5%, rgb(255, 255, 255) 87.5%); 
-   
+    background: rgb(255, 253, 253) linear-gradient(to bottom, rgb(9, 172, 172) 12.5%, rgb(255, 254, 254) 12.5%, rgb(255, 255, 255) 87.5%);
+
 }
 .form-control:focus{
     border-color: #1b7e64 !important;
@@ -35,7 +34,7 @@
 }
 .form-control{
     margin:5px;
-    box-shadow: 0 0 1px 1.5px rgb(61, 58, 58);
+    box-shadow: 0 0 1px 2px rgb(61, 58, 58);
 }
 .row{
     margin-top: 4px;
@@ -148,13 +147,7 @@
 .dateofbirthcss:hover{
 cursor: pointer;
 }
-/* .boldTitle{
-    text-align: center;
-    font-size: 25px;
-    font-family: Oswald, serif;
-    font-weight: 500;
-    color: rgba(0,0,0,0.8);
-} */
+
 .submitBtn{
     color: white;
     border: 1px solid black;
@@ -172,6 +165,6 @@ cursor: pointer;
 .photoSelect{
   font-size: 16px;
   font-style: italic;
-  font-weight: 400px;
+  font-weight: 400;
   color:rgb(5, 5, 138);
 }

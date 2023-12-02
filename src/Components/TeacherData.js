@@ -2,17 +2,12 @@ import React, {useContext} from 'react';
 import {Button, Col, Row} from "react-bootstrap";
 import FormContext from "./Context/FormContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faAnglesRight} from "@fortawesome/free-solid-svg-icons";
 import {faAnglesLeft} from "@fortawesome/free-solid-svg-icons";
-import {faPeopleGroup} from "@fortawesome/free-solid-svg-icons";
-import {faBuildingColumns} from "@fortawesome/free-solid-svg-icons";
-import {faUser} from "@fortawesome/free-solid-svg-icons";
 import {faAddressCard} from "@fortawesome/free-solid-svg-icons";
 import {faFileSignature} from "@fortawesome/free-solid-svg-icons";
 import {faAt} from "@fortawesome/free-solid-svg-icons";
 import {faPhone} from "@fortawesome/free-solid-svg-icons";
 import {faVenusMars} from "@fortawesome/free-solid-svg-icons";
-import {faCalendarDays} from "@fortawesome/free-solid-svg-icons";
 import {faCreditCard} from "@fortawesome/free-solid-svg-icons";
 import {faShirt} from "@fortawesome/free-solid-svg-icons";
 import {faIdCardClip} from "@fortawesome/free-solid-svg-icons";
@@ -49,7 +44,7 @@ function TeacherData({thirdCall,inputChange,postDataToBackend}) {
                         className="form-control"
                         name="teacherName2"
                         onChange={inputChange}
-                        value={!data.teacherName2===""?"":data.teacherName2}
+                        value={"" === !data.teacherName2?"":data.teacherName2}
 
                     />
                 </Col>
@@ -61,7 +56,7 @@ function TeacherData({thirdCall,inputChange,postDataToBackend}) {
                         className="form-control w-25"
                         name="teacherDesignation"
                         onChange={inputChange}
-                        value={!data.teacherDesignation===""?"":data.teacherDesignation}
+                        value={"" === !data.teacherDesignation?"":data.teacherDesignation}
 
                     >
                         <option value="">Select</option>
@@ -77,7 +72,7 @@ function TeacherData({thirdCall,inputChange,postDataToBackend}) {
                         className="form-control"
                         name="teacherEmail"
                         onChange={inputChange}
-                        value={!data.teacherEmail===""?"":data.teacherEmail}
+                        value={"" === !data.teacherEmail?"":data.teacherEmail}
 
                     />
                     <label htmlFor="x"><FontAwesomeIcon icon={faPhone} />    Contact Number</label>
@@ -87,7 +82,7 @@ function TeacherData({thirdCall,inputChange,postDataToBackend}) {
                         className="form-control"
                         name="teacherPhone"
                         onChange={inputChange}
-                        value={!data.teacherPhone===""?"":data.teacherPhone}
+                        value={"" === !data.teacherPhone?"":data.teacherPhone}
 
                     />
                     <label className='dateofbirthcss'><FontAwesomeIcon icon={faVenusMars} />    Gender</label><br/>
@@ -114,7 +109,7 @@ function TeacherData({thirdCall,inputChange,postDataToBackend}) {
                         className="form-control"
                         name="teacherNid"
                         onChange={inputChange}
-                        value={!data.teacherNid===""?"":data.teacherNid}
+                        value={"" === !data.teacherNid?"":data.teacherNid}
 
                     />
                     <label htmlFor="available"><FontAwesomeIcon icon={faShirt} />    T-shirt Size</label><br/>
@@ -123,7 +118,7 @@ function TeacherData({thirdCall,inputChange,postDataToBackend}) {
                         className="form-control w-25"
                         name="teacherTShirt"
                         onChange={inputChange}
-                        value={!data.teacherTShirt===""?"":data.teacherTShirt}
+                        value={"" === !data.teacherTShirt?"":data.teacherTShirt}
 
                     >
                         <option value="0">Select</option>

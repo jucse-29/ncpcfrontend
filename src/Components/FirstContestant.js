@@ -29,7 +29,7 @@ function FirstContestant({secondCall,inputChange}) {
                         className="form-control"
                         name="teamName"
                         onChange={inputChange}
-                        value={!data.teamName===""?"":data.teamName}
+                        value={"" === !data.teamName?"":data.teamName}
                     />
                 </Col>
                 <Col md={6} sm={12} lg={6}>
@@ -38,7 +38,7 @@ function FirstContestant({secondCall,inputChange}) {
                         type="text"
                         placeholder="Institute Name"
                         className="form-control"
-                        value={!data.instituteName===""?"":data.instituteName}
+                        value={"" === !data.instituteName?"":data.instituteName}
                         name="instituteName"
                         onChange={inputChange}
                     />
@@ -56,7 +56,7 @@ function FirstContestant({secondCall,inputChange}) {
                         className="form-control"
                         name="firstUserName1"
                         onChange={inputChange}
-                        value={!data.firstUserName1===""?"":data.firstUserName1}
+                        value={"" === !data.firstUserName1?"":data.firstUserName1}
                     />
                 </Col>
                 <Col md={6} sm={12} lg={6}>
@@ -67,7 +67,7 @@ function FirstContestant({secondCall,inputChange}) {
                         className="form-control"
                         name="firstUserName2"
                         onChange={inputChange}
-                        value={!data.firstUserName2===""?"":data.firstUserName2}
+                        value={"" === !data.firstUserName2?"":data.firstUserName2}
                     />
                 </Col>
             </Row>
@@ -80,7 +80,7 @@ function FirstContestant({secondCall,inputChange}) {
                         className="form-control"
                         name="firstUserEmail"
                         onChange={inputChange}
-                        value={!data.firstUserEmail===""?"":data.firstUserEmail}
+                        value={"" === !data.firstUserEmail?"":data.firstUserEmail}
 
                     />
                     <label htmlFor="x"><FontAwesomeIcon icon={faPhone} />    Contact Number</label>
@@ -90,7 +90,7 @@ function FirstContestant({secondCall,inputChange}) {
                         className="form-control"
                         name="firstUserPhone"
                         onChange={inputChange}
-                        value={!data.firstUserPhone===""?"":data.firstUserPhone}
+                        value={"" === !data.firstUserPhone?"":data.firstUserPhone}
                     />
                     <label for="gender" className='gendercc'><FontAwesomeIcon icon={faVenusMars} />    Gender</label><br/>
                     <input
@@ -125,7 +125,7 @@ function FirstContestant({secondCall,inputChange}) {
                         required="true"
                         name="firstUserDob"
                         onChange={inputChange}
-                        value={!data.firstUserDob===""?"":data.firstUserDob}
+                        value={"" === !data.firstUserDob?"":data.firstUserDob}
                     />
                     <label htmlFor="pp"><FontAwesomeIcon icon={faCreditCard} />  NID/Birth Registration No</label><br/>
                     <input
@@ -133,7 +133,7 @@ function FirstContestant({secondCall,inputChange}) {
                         className="form-control"
                         name="firstUserNid"
                         onChange={inputChange}
-                        value={!data.firstUserNid===""?"":data.firstUserNid}
+                        value={"" === !data.firstUserNid?"":data.firstUserNid}
                     />
                     <label htmlFor="available"><FontAwesomeIcon icon={faShirt} />    T-shirt size</label><br/>
                     <select
@@ -141,7 +141,7 @@ function FirstContestant({secondCall,inputChange}) {
                         className="form-control w-25"
                         name="firstUserTShirt"
                         onChange={inputChange}
-                        value={!data.firstUserTShirt===""?"":data.firstUserTShirt}
+                        value={"" === !data.firstUserTShirt?"":data.firstUserTShirt}
                     >
                         <option value="0">Select</option>
                         <option value="s">S</option>
