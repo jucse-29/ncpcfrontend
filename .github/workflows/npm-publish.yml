@@ -31,5 +31,5 @@ jobs:
           username: ${{ secrets.DIGITAL_OCEAN_USER_NAME }}
           password: ${{ secrets.DIGITAL_OCEAN_PASSWORD }}
           port: 22
-          local-dir: build  # Adjust this based on your project structure
+          local-dir: build/
           server-dir: /var/www/html/ncpcfrontend
