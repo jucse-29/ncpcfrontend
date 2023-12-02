@@ -1,4 +1,4 @@
-import React, {useContext,useState} from 'react';
+import React, {useContext} from 'react';
 import {Button, Col, Row} from "react-bootstrap";
 import FormContext from "./Context/FormContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,25 +14,14 @@ import {faVenusMars} from "@fortawesome/free-solid-svg-icons";
 import {faCalendarDays} from "@fortawesome/free-solid-svg-icons";
 import {faCreditCard} from "@fortawesome/free-solid-svg-icons";
 import {faShirt} from "@fortawesome/free-solid-svg-icons";
-import {faIdCardClip} from "@fortawesome/free-solid-svg-icons";
 import {faImage} from "@fortawesome/free-solid-svg-icons";
-import {faChalkboardUser} from "@fortawesome/free-solid-svg-icons";
 
 function FirstContestant({secondCall,inputChange}) {
-    
-    
-     
-
     const {data} = useContext(FormContext);
-    
-
     return (
         <div className="firstContestant mt-4">
-            
             <Row>
-            
                 <Col md={6} sm={12} lg={6}>
-                
                     <label htmlFor="x"><FontAwesomeIcon icon={faPeopleGroup} />     Team Name</label>
                     <input
                         type="text"
@@ -54,9 +43,6 @@ function FirstContestant({secondCall,inputChange}) {
                         onChange={inputChange}
                     />
                 </Col>
-
-
-                
             </Row>
             <hr/>
             <h4 className="title mb-4"><FontAwesomeIcon icon={faUser} />    Team Member-1</h4>
@@ -82,7 +68,6 @@ function FirstContestant({secondCall,inputChange}) {
                         name="firstUserName2"
                         onChange={inputChange}
                         value={!data.firstUserName2===""?"":data.firstUserName2}
-
                     />
                 </Col>
             </Row>
