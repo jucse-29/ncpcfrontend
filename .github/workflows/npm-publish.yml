@@ -1,32 +1,39 @@
+name: Deploy to Digital Ocean
+
 on:
   push:
     branches:
       - main
-name: 🚀 Deploy website on push
 
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: 🚚 Get latest code
-        uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-      - name: Use Node.js 16
-        uses: actions/setup-node@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: '16'
+          node-version: 14
 
-      - name: 🔨 Build Project
-        run: |
-          npm install
-          npm run build
+      - name: Install dependencies
+        run: npm install
 
-      - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - name: Build the React app
+        run: npm run build
+
+      - name: Deploy to Digital Ocean
+        uses: appleboy/ssh-action@master
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ${{ secrets.FTP_PROTOCOL }}
-          local-dir: ./build/
+          host: ${{ secrets.DIGITAL_OCEAN_IP }}
+          username: ${{ secrets.DIGITAL_OCEAN_USER_NAME }}
+          key: ${{ secrets.DIGITAL_OCEAN_DEPLOY_KEY }}
+          port: 22
+          script: |
+            cd /path/to/your/react/app
+            git pull origin main
+            npm install
+            npm run build
+            sudo mv build /var/www/html/ncpcfrontend
