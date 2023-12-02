@@ -32,8 +32,6 @@ jobs:
           password: ${{ secrets.DIGITAL_OCEAN_DEPLOY_KEY }}
           port: 22
           script: |
-            cd /path/to/your/react/app
             git pull origin main
             npm install
             npm run build
-            sudo mv build /var/www/html/ncpcfrontend
