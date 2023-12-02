@@ -1,4 +1,4 @@
-// Honor.js
+ // Honor.js
 import React from 'react';
 import {Col, Container, Row,Carousel,Button } from "react-bootstrap";
 import choyon from "../Assets/Images/choyon.jpg";

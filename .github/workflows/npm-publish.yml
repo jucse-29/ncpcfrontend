@@ -1,31 +1,29 @@
-name: Deploy to Digital Ocean
-
 on:
   push:
     branches:
       - main
+name: 🚀 Deploy website on push
 
 jobs:
-  deploy:
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - name: Use Node.js 16
+        uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: '16'
 
-      - name: Install dependencies
-        run: npm install
+      - name: 🔨 Build Project
+        run: |
+          npm install
+          npm run build
 
-      - name: Build the React app
-        run: npm run build
-
-      - name: Deploy to Digital Ocean
-        uses: appleboy/ssh-action@master
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           host: ${{ secrets.DIGITAL_OCEAN_IP }}
           username: ${{ secrets.DIGITAL_OCEAN_USER_NAME }}
