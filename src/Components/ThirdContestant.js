@@ -4,6 +4,8 @@ import FormContext from "./Context/FormContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faAnglesRight} from "@fortawesome/free-solid-svg-icons";
 import {faAnglesLeft} from "@fortawesome/free-solid-svg-icons";
+import {faPeopleGroup} from "@fortawesome/free-solid-svg-icons";
+import {faBuildingColumns} from "@fortawesome/free-solid-svg-icons";
 import {faUser} from "@fortawesome/free-solid-svg-icons";
 import {faAddressCard} from "@fortawesome/free-solid-svg-icons";
 import {faFileSignature} from "@fortawesome/free-solid-svg-icons";
@@ -13,7 +15,9 @@ import {faVenusMars} from "@fortawesome/free-solid-svg-icons";
 import {faCalendarDays} from "@fortawesome/free-solid-svg-icons";
 import {faCreditCard} from "@fortawesome/free-solid-svg-icons";
 import {faShirt} from "@fortawesome/free-solid-svg-icons";
+import {faIdCardClip} from "@fortawesome/free-solid-svg-icons";
 import {faImage} from "@fortawesome/free-solid-svg-icons";
+import {faChalkboardUser} from "@fortawesome/free-solid-svg-icons";
 
 function ThirdContestant({fourthCall,secondCall,inputChange}) {
 
@@ -32,7 +36,7 @@ function ThirdContestant({fourthCall,secondCall,inputChange}) {
                         className="form-control"
                         name="thirdUserName1"
                         onChange={inputChange}
-                        value={"" === !data.thirdUserName1?"":data.thirdUserName1}
+                        value={!data.thirdUserName1===""?"":data.thirdUserName1}
 
                     />
                 </Col>
@@ -44,7 +48,7 @@ function ThirdContestant({fourthCall,secondCall,inputChange}) {
                         className="form-control"
                         name="thirdUserName2"
                         onChange={inputChange}
-                        value={"" === !data.thirdUserName2?"":data.thirdUserName2}
+                        value={!data.thirdUserName2===""?"":data.thirdUserName2}
 
                     />
                 </Col>
@@ -58,7 +62,7 @@ function ThirdContestant({fourthCall,secondCall,inputChange}) {
                         className="form-control"
                         name="thirdUserEmail"
                         onChange={inputChange}
-                        value={"" === !data.thirdUserEmail?"":data.thirdUserEmail}
+                        value={!data.thirdUserEmail===""?"":data.thirdUserEmail}
 
                     />
                     <label htmlFor="x"><FontAwesomeIcon icon={faPhone} />    Contact Number</label>
@@ -68,7 +72,7 @@ function ThirdContestant({fourthCall,secondCall,inputChange}) {
                         className="form-control"
                         name="thirdUserPhone"
                         onChange={inputChange}
-                        value={"" === !data.thirdUserPhone?"":data.thirdUserPhone}
+                        value={!data.thirdUserPhone===""?"":data.thirdUserPhone}
 
                     />
                     <label className='dateofbirthcss'><FontAwesomeIcon icon={faVenusMars} />    Gender</label><br/>
@@ -104,7 +108,7 @@ function ThirdContestant({fourthCall,secondCall,inputChange}) {
                         required="true"
                         name="thirdUserDob"
                         onChange={inputChange}
-                        value={"" === !data.thirdUserDob?"":data.thirdUserDob}
+                        value={!data.thirdUserDob===""?"":data.thirdUserDob}
 
                     />
                     <label htmlFor="pp"><FontAwesomeIcon icon={faCreditCard} /> NID/Birth Registration No</label><br/>
@@ -113,7 +117,7 @@ function ThirdContestant({fourthCall,secondCall,inputChange}) {
                         className="form-control"
                         name="thirdUserNid"
                         onChange={inputChange}
-                        value={"" === !data.thirdUserNid?"":data.thirdUserNid}
+                        value={!data.thirdUserNid===""?"":data.thirdUserNid}
 
                     />
                     <label htmlFor="available"><FontAwesomeIcon icon={faShirt} />    T-shirt Size</label><br/>
@@ -122,7 +126,7 @@ function ThirdContestant({fourthCall,secondCall,inputChange}) {
                         className="form-control w-25"
                         name="thirdUserTShirt"
                         onChange={inputChange}
-                        value={"" === !data.thirdUserTShirt?"":data.thirdUserTShirt}
+                        value={!data.thirdUserTShirt===""?"":data.thirdUserTShirt}
 
                     >
                         <option value="0">Select</option>

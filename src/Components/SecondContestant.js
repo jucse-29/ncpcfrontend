@@ -4,6 +4,8 @@ import FormContext from "./Context/FormContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faAnglesRight} from "@fortawesome/free-solid-svg-icons";
 import {faAnglesLeft} from "@fortawesome/free-solid-svg-icons";
+import {faPeopleGroup} from "@fortawesome/free-solid-svg-icons";
+import {faBuildingColumns} from "@fortawesome/free-solid-svg-icons";
 import {faUser} from "@fortawesome/free-solid-svg-icons";
 import {faAddressCard} from "@fortawesome/free-solid-svg-icons";
 import {faFileSignature} from "@fortawesome/free-solid-svg-icons";
@@ -13,7 +15,9 @@ import {faVenusMars} from "@fortawesome/free-solid-svg-icons";
 import {faCalendarDays} from "@fortawesome/free-solid-svg-icons";
 import {faCreditCard} from "@fortawesome/free-solid-svg-icons";
 import {faShirt} from "@fortawesome/free-solid-svg-icons";
+import {faIdCardClip} from "@fortawesome/free-solid-svg-icons";
 import {faImage} from "@fortawesome/free-solid-svg-icons";
+import {faChalkboardUser} from "@fortawesome/free-solid-svg-icons";
 function SecondContestant({thirdCall,firstCall,inputChange}) {
 
     const {data} = useContext(FormContext);
@@ -32,7 +36,7 @@ function SecondContestant({thirdCall,firstCall,inputChange}) {
                         className="form-control"
                         name="secondUserName1"
                         onChange={inputChange}
-                        value={"" === !data.secondUserName1?"":data.secondUserName1}
+                        value={!data.secondUserName1===""?"":data.secondUserName1}
 
                     />
                 </Col>
@@ -44,7 +48,7 @@ function SecondContestant({thirdCall,firstCall,inputChange}) {
                         className="form-control"
                         name="secondUserName2"
                         onChange={inputChange}
-                        value={"" === !data.secondUserName2?"":data.secondUserName2}
+                        value={!data.secondUserName2===""?"":data.secondUserName2}
 
                     />
                 </Col>
@@ -58,7 +62,7 @@ function SecondContestant({thirdCall,firstCall,inputChange}) {
                         className="form-control"
                         name="secondUserEmail"
                         onChange={inputChange}
-                        value={"" === !data.secondUserEmail?"":data.secondUserEmail}
+                        value={!data.secondUserEmail===""?"":data.secondUserEmail}
 
                     />
                     <label htmlFor="x"><FontAwesomeIcon icon={faPhone} />    Contact Number</label>
@@ -68,7 +72,7 @@ function SecondContestant({thirdCall,firstCall,inputChange}) {
                         className="form-control"
                         name="secondUserPhone"
                         onChange={inputChange}
-                        value={"" === !data.secondUserPhone?"":data.secondUserPhone}
+                        value={!data.secondUserPhone===""?"":data.secondUserPhone}
 
                     />
                     <label className='dateofbirthcss'><FontAwesomeIcon icon={faVenusMars} />    Gender</label><br/>
@@ -105,7 +109,7 @@ function SecondContestant({thirdCall,firstCall,inputChange}) {
                         required="true"
                         name="secondUserDob"
                         onChange={inputChange}
-                        value={"" === !data.secondUserDob?"":data.secondUserDob}
+                        value={!data.secondUserDob===""?"":data.secondUserDob}
 
                     />
                     <label htmlFor="pp"><FontAwesomeIcon icon={faCreditCard} />  NID/Birth Registration No</label><br/>
@@ -114,7 +118,7 @@ function SecondContestant({thirdCall,firstCall,inputChange}) {
                         className="form-control"
                         name="secondUserNid"
                         onChange={inputChange}
-                        value={"" === !data.secondUserNid?"":data.secondUserNid}
+                        value={!data.secondUserNid===""?"":data.secondUserNid}
 
                     />
                     <label htmlFor="available"><FontAwesomeIcon icon={faShirt} />    T-shirt Size</label><br/>
@@ -123,7 +127,7 @@ function SecondContestant({thirdCall,firstCall,inputChange}) {
                         className="form-control w-25"
                         name="secondUserTShirt"
                         onChange={inputChange}
-                        value={"" === !data.secondUserTShirt?"":data.secondUserTShirt}
+                        value={!data.secondUserTShirt===""?"":data.secondUserTShirt}
 
                     >
                         <option value="0">Select</option>

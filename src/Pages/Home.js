@@ -7,11 +7,16 @@ import Alumni1 from "../Components/Alumni1";
 function Home(props) {
     return (
         <Fragment>
+           
             <TopBanner/>
+          
             <Honor/>
+            
             <Alumni1/>
+           
             <Support/>
             <Sponsor/>
+
         </Fragment>
     );
 }

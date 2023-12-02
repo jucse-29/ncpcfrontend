@@ -1,6 +1,5 @@
 import React, {Fragment} from 'react';
-import {Button,Carousel, Col, Row} from "react-bootstrap";
-
+import {Button, Carousel, Col, Row} from "react-bootstrap";
 function Gallery(props) {
     return (
         <Fragment>

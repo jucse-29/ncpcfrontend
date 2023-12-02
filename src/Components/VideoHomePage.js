@@ -20,15 +20,6 @@ function VideoHomePage(props) {
   };
 
   const playPauseVideo = () => {
-    videoPlayer.getPlayerState = function () {
-
-    };
-    videoPlayer.pauseVideo = function () {
-
-    };
-    videoPlayer.playVideo = function () {
-
-    };
     if (videoPlayer) {
       if (videoPlayer.getPlayerState() === 1) {
         videoPlayer.pauseVideo();

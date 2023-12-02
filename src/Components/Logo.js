@@ -5,6 +5,10 @@ import ju from '../Assets/Images/juLogo.jpg';
 import bcc from '../Assets/Images/bcc_logo.png';
 import db from '../Assets/Images/digital-bangladesh.png';
 import ict from '../Assets/Images/ICT_Division.png';
+import ju_writing from '../Assets/Images/ju_writing.png';
+import ju_cse from '../Assets/Images/dept/ju_cse.png';
+import cse from "../Assets/Images/dept/Untitled - Copy.png";
+import onlycse from "../Assets/Images/dept/onlycse.png";
 import ju_cse_copy from '../Assets/Images/dept/ju_cse_alumni - Copy.png';
     
 function Logo(props) {

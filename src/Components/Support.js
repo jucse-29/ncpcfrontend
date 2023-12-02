@@ -3,6 +3,7 @@ import {Col, Container, Row} from "react-bootstrap";
 import digital from "../Assets/Images/digital-bangladesh.png";
 import ict from "../Assets/Images/ICT_Division.png";
 import bd from "../Assets/Images/bcc_logo.png";
+import ju from "../Assets/Images/juLogo.jpg";
 import ju_cse from "../Assets/Images/dept/ju_cse.png";
 
 function Support(props) {

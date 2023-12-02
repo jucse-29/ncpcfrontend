@@ -21,12 +21,6 @@ function TopMenu(props) {
             else{
                 setIsScroll(false);
             }
-            setCss({
-                navBar:'navBar',
-                navLink:'navLink',
-                nabBrand:'navBrand',
-                logo:logo1
-            })
         }
         window.addEventListener('scroll',handleScroll);
         return window.addEventListener('scroll',handleScroll);
@@ -53,27 +47,27 @@ function TopMenu(props) {
                            <Nav.Link ><Link to="registration"  className={css.navLink} >Registration</Link></Nav.Link>
                            
                            <Dropdown
+                               as={Nav.Item}
                                onMouseEnter={handleMouseEnter}
                                onMouseLeave={handleMouseLeave}
                                show={dropdownOpen}
                                className="ddMenu"
                            >
-                               <Nav.Link className={css.navLink} id="dropdown-basic">Committee</Nav.Link>
+                               <Dropdown.Toggle className={css.navLink}  as={Nav.Link} id="dropdown-basic">Committee</Dropdown.Toggle>
                                <Dropdown.Menu className="ddBox">
-                                   <Dropdown.Item className={css.navLink}><Link to="committee">Executive Committee</Link></Dropdown.Item>
-                                   <Dropdown.Item className={css.navLink}><Link to="/">IT Committee</Link></Dropdown.Item>
-                                   <Dropdown.Item className={css.navLink}><Link to="/">Social Media</Link></Dropdown.Item>
+                                   <Dropdown.Item className={css.navLink} as={Link} to="committee">Executive Committee</Dropdown.Item>
+                                   <Dropdown.Item className={css.navLink} as={Link} to="/">IT Committee</Dropdown.Item>
+                                   <Dropdown.Item className={css.navLink} as={Link} to="/">Social Media</Dropdown.Item>
                                </Dropdown.Menu>
                            </Dropdown>
                            <Nav.Link><Link to="gallery"  className={css.navLink} >Gallery</Link></Nav.Link>
                        </Nav>
                    </Navbar.Collapse>
                </Navbar>
-               <div className="marquee-container">
-                   <p className="marquee-content">
-                       | NCPC 2023 | Department of Computer Science and Engineering | Jahangirnagar University |
-                   </p>
-               </div>
+            
+              {/* AN */}
+              <marquee className="mar" behavior="" direction="" scrollamount="3" >|  NCPC 2023  |  Department of Computer Science and Engineering  |  Jahangirnagar University  |</marquee>
+           {/* AN */}
            </Container>
         </Fragment>
     );

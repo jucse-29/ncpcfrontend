@@ -55,7 +55,6 @@ function RegiForm() {
     };
 
 
-
     const firstCall =()=>{
         setSecond(false);
         setFourth(false);
