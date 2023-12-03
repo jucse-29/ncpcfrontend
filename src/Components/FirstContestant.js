@@ -1,4 +1,4 @@
-import React, {useContext,useState} from 'react';
+import React, {useContext} from 'react';
 import {Button, Col, Row} from "react-bootstrap";
 import FormContext from "./Context/FormContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,9 +14,8 @@ import {faVenusMars} from "@fortawesome/free-solid-svg-icons";
 import {faCalendarDays} from "@fortawesome/free-solid-svg-icons";
 import {faCreditCard} from "@fortawesome/free-solid-svg-icons";
 import {faShirt} from "@fortawesome/free-solid-svg-icons";
-import {faIdCardClip} from "@fortawesome/free-solid-svg-icons";
 import {faImage} from "@fortawesome/free-solid-svg-icons";
-import {faChalkboardUser} from "@fortawesome/free-solid-svg-icons";
+
 
 function FirstContestant({secondCall,inputChange}) {
     
@@ -107,7 +106,7 @@ function FirstContestant({secondCall,inputChange}) {
                         onChange={inputChange}
                         value={!data.firstUserPhone===""?"":data.firstUserPhone}
                     />
-                    <label for="gender" className='gendercc'><FontAwesomeIcon icon={faVenusMars} />    Gender</label><br/>
+                    <label htmlFor="gender" className='gendercc'><FontAwesomeIcon icon={faVenusMars} />    Gender</label><br/>
                     <input
                         className="form-check-input"
                         type="radio"

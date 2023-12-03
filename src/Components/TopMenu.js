@@ -21,6 +21,12 @@ function TopMenu(props) {
             else{
                 setIsScroll(false);
             }
+            setCss({
+                navBar:'navBar',
+                navLink:'navLink',
+                nabBrand:'navBrand',
+                logo:logo1
+            })
         }
         window.addEventListener('scroll',handleScroll);
         return window.addEventListener('scroll',handleScroll);
@@ -64,10 +70,9 @@ function TopMenu(props) {
                        </Nav>
                    </Navbar.Collapse>
                </Navbar>
-            
-              {/* AN */}
-              <marquee className="mar" behavior="" direction="" scrollamount="3" >|  NCPC 2023  |  Department of Computer Science and Engineering  |  Jahangirnagar University  |</marquee>
-           {/* AN */}
+               <div className="marquee">
+                   | NCPC 2023 | Department of Computer Science and Engineering | Jahangirnagar University |
+               </div>
            </Container>
         </Fragment>
     );

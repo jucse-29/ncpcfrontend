@@ -4,8 +4,6 @@ import FormContext from "./Context/FormContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faAnglesRight} from "@fortawesome/free-solid-svg-icons";
 import {faAnglesLeft} from "@fortawesome/free-solid-svg-icons";
-import {faPeopleGroup} from "@fortawesome/free-solid-svg-icons";
-import {faBuildingColumns} from "@fortawesome/free-solid-svg-icons";
 import {faUser} from "@fortawesome/free-solid-svg-icons";
 import {faAddressCard} from "@fortawesome/free-solid-svg-icons";
 import {faFileSignature} from "@fortawesome/free-solid-svg-icons";
@@ -15,9 +13,7 @@ import {faVenusMars} from "@fortawesome/free-solid-svg-icons";
 import {faCalendarDays} from "@fortawesome/free-solid-svg-icons";
 import {faCreditCard} from "@fortawesome/free-solid-svg-icons";
 import {faShirt} from "@fortawesome/free-solid-svg-icons";
-import {faIdCardClip} from "@fortawesome/free-solid-svg-icons";
 import {faImage} from "@fortawesome/free-solid-svg-icons";
-import {faChalkboardUser} from "@fortawesome/free-solid-svg-icons";
 
 function ThirdContestant({fourthCall,secondCall,inputChange}) {
 

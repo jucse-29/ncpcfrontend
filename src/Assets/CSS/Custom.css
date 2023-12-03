@@ -136,13 +136,13 @@
     /* margin-top: -5px; */
   
     width:72%;
-    border:0px solid rgb(97, 94, 94);
+    border:0 solid rgb(97, 94, 94);
 }
 
 .fullBanner{
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     
     
 }
@@ -261,7 +261,6 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 
 .contactBtn{
     background-color: rgba(0,0,0,0.5)!important;
-    background-color: transparent;
     border: 1px solid black!important;
     color: white !important;
     font-size: 20px!important;
@@ -363,11 +362,8 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 .honorContainer{
     /* background-color: rgba(20, 218, 224, 0.1); */
     background-color: white;
-    margin-left: 1.5%;
-    margin-right: 0%;;
-    margin-bottom: 4%;
-    margin-top: 4%;
-    
+    margin: 4% 0 4% 1.5%;
+
 
 }
 
@@ -482,7 +478,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     text-decoration: none;
     /* color: navy; */
     color:green;
-    justify-content: start;
+    justify-content: flex-start;
     font-size: 16px;
     font-family: Montserrat, serif;
     font-weight: 700;
@@ -689,12 +685,9 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 .fullBanneralumni{
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     background-color:white;
-    margin-left: 2.4%;;
-    margin-right: 1.5%;
-    margin-bottom: 4%;
-    margin-top: 4%;
+    margin: 4% 1.5% 4% 2.4%;
     box-shadow: 0 3px 10px rgb(48, 64, 87);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
    
@@ -778,7 +771,6 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 
 .contactBtnalumni{
     background-color: rgba(0,0,0,0.5)!important;
-    background-color: transparent;
     border: 1px solid black!important;
     color: white !important;
     font-size: 20px!important;
@@ -800,7 +792,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     margin:11%;
    
     color:rgb(255, 255, 255);
-    border-radius: 0%!important;
+    border-radius: 0!important;
     text-align: center;
     box-shadow: 0 0 7px rgba(255, 255, 255, 0.5); 
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
@@ -830,11 +822,9 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     /* color: navy; */
     color:rgb(255, 255, 255);
     text-align: justify;
-    
     font-size: 17px;
     font-weight: 700;
     font-family: Montserrat, serif;
-    font-weight: 450;
 }
 .alumniDivRight:hover{
     cursor:pointer;
