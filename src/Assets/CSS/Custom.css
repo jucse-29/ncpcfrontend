@@ -152,15 +152,12 @@
     background:#010f29;
     text-align: center;
     border:1px solid rgb(97, 94, 94);
-    /* margin-left:2%; */
-    
     padding-left:1.5%;
     padding-right: 1.5%;
     color:rgb(254, 251, 251);
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding-bottom: 1.5%; */
 }
 .bannerRight img{
     width:99%;
