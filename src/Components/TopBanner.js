@@ -18,83 +18,49 @@ function TopBanner(props) {
     
     return (
         <Fragment>
-             
-            {/* <marquee className="mar" behavior="" direction="">**NCPC CSE JU**</marquee> */}
-            <Container fluid="true" className='fullBanner'>
-            {/* <Container fluid="true" className='bannerRight'>
-              
-                
-                <h3> NCPC 2023
-               </h3>
-                <img className="jucselogoBanner1" src={ncpclogo} alt="" />
-                
-                
-                <Button className="buttonBanner" variant="danger"><FontAwesomeIcon icon={faShare} beat size='xl'/> Register Now</Button>
-            </Container> */}
             <Container fluid="true" className="topBanner">
-               
                 <Row className="p-0 m-0">
-
-                    <Col className="m-0 p-0">
+                    <Col md={7} lg={7} sm={12} className="m-0 p-0">
                         <Carousel className="card-carousel">
-                        
                             <Carousel.Item>
-                                {/* <img className="carouselImg" src="https://juniv.edu/storage/image/gallery/NMYT0PnV9SSOx4IAzRUrg6UwweXWq1WBXshVwkNr.jpg" alt=""/> */}
                                 <img className="carouselImg" src={green} alt=""/>
                                 <Carousel.Caption>
-                                    {/*white here some caption*/}
                                     <Button className="contactBtn">Register Now <FontAwesomeIcon icon={faHandPointer} beat /></Button>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                {/* <img className="carouselImg" src="https://juniv.edu/storage/image/gallery/6122_banner_bsmr_hall-3816f4.jpg" alt=""/> */}
-                                 <img className="carouselImg" src={champs_ncpc} alt=""/>
+                                <img className="carouselImg" src={champs_ncpc} alt=""/>
                                 <Carousel.Caption>
-                                    {/*white here some caption*/}
                                     <Button className="contactBtn">Register Now <FontAwesomeIcon icon={faHandPointer} beat /></Button>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                {/* <img className="carouselImg" src="https://juniv.edu/storage/image/gallery/6121_banner_library-12a970.jpg" alt=""/> */}
                                 <img className="carouselImg" src={mh} alt=""/>
                                 <Carousel.Caption>
-                                    {/*white here some caption*/}
                                     <Button className="contactBtn">Register Now <FontAwesomeIcon icon={faHandPointer} beat /></Button>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                {/* <img className="carouselImg" src="https://juniv.edu/storage/image/gallery/wV9mgeB6A4nkMxihqKmPJ2tcCBB1YLdv5IVysRq1.jpg" alt=""/> */}
                                 <img className="carouselImg" src={s_minar} alt=""/>
                                 <Carousel.Caption>
-                                    {/*white here some caption*/}
                                     <Button className="contactBtn">Register Now <FontAwesomeIcon icon={faHandPointer} beat /></Button>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                {/* <img className="carouselImg" src="https://juniv.edu/storage/image/gallery/9wLQQCnx1eHfGeWG82uxBP67lv8fpdgPICigKt9o.jpg" alt=""/> */}
                                 <img className="carouselImg" src={lab} alt=""/>
                                 <Carousel.Caption>
-                                    {/*white here some caption*/}
                                     <Button className="contactBtn">Register Now <FontAwesomeIcon icon={faHandPointer} beat /></Button>
                                 </Carousel.Caption>
                             </Carousel.Item>
                         </Carousel>
                     </Col>
-                    
-                   
+                    <Col md={5} lg={5} sm={12} className="m-0 p-0" >
+                        <Count/>
+                        <Button variant="danger">Register Now  <FontAwesomeIcon icon={faReply} /></Button>
+                        <h5>Department of Computer Science and Engineering <br/>(CSE)</h5>
+                        <p>Jahangirnagar University</p>
+                    </Col>
                 </Row>
-               
-            </Container>
-            <Container fluid="true" className='bannerRight'>
-                <Count/>
-                <Button className='buttonBanner' variant="danger">Register Now  <FontAwesomeIcon icon={faReply} /></Button>
-              
-            {/* <div className='hostedbyDiv'> */}
-                <h5>Department of Computer Science and Engineering <br/>(CSE)</h5>
-                <p>Jahangirnagar University</p>
-                {/* <img src={jucse} alt="" /> */}
-                {/* </div> */}
-            </Container>
             </Container>
         </Fragment>
     );

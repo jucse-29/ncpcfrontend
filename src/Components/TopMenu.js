@@ -1,7 +1,7 @@
 import React, {Fragment, useEffect, useState} from 'react';
 import {Container, Dropdown, Nav, Navbar} from "react-bootstrap";
 import {Link} from "react-router-dom";
-import logo1 from '../Assets/Images/juLogo.jpg';
+
 
 function TopMenu(props) {
     const [isScroll,setIsScroll] = useState(false);
@@ -9,24 +9,28 @@ function TopMenu(props) {
     const [css,setCss] = useState({
         navBar:'navBar',
         navLink:'navLink',
-        nabBrand:'navBrand',
-        logo:logo1
+        ddBox:'ddBox'
     })
 
     useEffect(()=>{
         function handleScroll(){
             if(window.scrollY>65){
                 setIsScroll(true);
+                setCss({
+                    navBar:'navBarScroll',
+                    navLink:'navLinkScroll',
+                    ddBox:'ddBoxScroll'
+                })
             }
             else{
                 setIsScroll(false);
+                setCss({
+                    navBar:'navBar',
+                    navLink:'navLink',
+                    ddBox:'ddBox'
+                })
             }
-            setCss({
-                navBar:'navBar',
-                navLink:'navLink',
-                nabBrand:'navBrand',
-                logo:logo1
-            })
+
         }
         window.addEventListener('scroll',handleScroll);
         return window.addEventListener('scroll',handleScroll);
@@ -51,7 +55,6 @@ function TopMenu(props) {
                            <Nav.Link ><Link to="/" className={css.navLink} >Home</Link></Nav.Link>
                            <Nav.Link ><Link to="/"  className={css.navLink} >About</Link></Nav.Link>
                            <Nav.Link ><Link to="registration"  className={css.navLink} >Registration</Link></Nav.Link>
-                           
                            <Dropdown
                                as={Nav.Item}
                                onMouseEnter={handleMouseEnter}
@@ -60,7 +63,7 @@ function TopMenu(props) {
                                className="ddMenu"
                            >
                                <Dropdown.Toggle className={css.navLink}  as={Nav.Link} id="dropdown-basic">Committee</Dropdown.Toggle>
-                               <Dropdown.Menu className="ddBox">
+                               <Dropdown.Menu className={css.ddBox}>
                                    <Dropdown.Item className={css.navLink} as={Link} to="committee">Executive Committee</Dropdown.Item>
                                    <Dropdown.Item className={css.navLink} as={Link} to="/">IT Committee</Dropdown.Item>
                                    <Dropdown.Item className={css.navLink} as={Link} to="/">Social Media</Dropdown.Item>

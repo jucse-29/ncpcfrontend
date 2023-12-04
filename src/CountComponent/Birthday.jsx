@@ -66,23 +66,9 @@ const Birthday = ({day, month }) => {
 
 
   return (
-    <div className='first-image'>
-       <Container fluid="true" className='page'>
-     {/* AN */}
-      
-      <Container fluid="true" className='countdown-NCPC-box'>
-        
-      <span><FontAwesomeIcon icon={faClock} size="sm" beat />  NCPC 2023</span> 
-      <Container className='typing-container'>
-          <Typing/>
-        </Container>
-          </Container>
-         
-       {/* AN */}
-      
+    <div className='page'>
+      <span><FontAwesomeIcon icon={faClock}/>  NCPC 2023</span>
       <Countdown countdownData={state}/>
-     
-    </Container>
     </div>
    
   );
