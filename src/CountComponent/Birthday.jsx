@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import Countdown from './Countdown';
+import React, { useState, useEffect } from "react";
+import Countdown from "./Countdown";
+import {Button, Carousel, Col, Row} from "react-bootstrap";
+import {faReply} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
+import { Container } from "react-bootstrap";
+import Typing from "./Typing";
 /*AN*/
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faClock} from "@fortawesome/free-solid-svg-icons";
-import { Container } from 'react-bootstrap';
-import Typing from './Typing';
-/*AN*/
-const Birthday = ({day, month }) => {
+const Birthday = ({ day, month }) => {
   const [state, setState] = useState({
     seconds: 0,
     hours: 0,
@@ -23,7 +24,6 @@ const Birthday = ({day, month }) => {
   useEffect(() => {
     setInterval(() => {
       const countdown = () => {
-
         const dateAtm = new Date();
         let birthdayDay = new Date(currentYear, month - 1, day);
         if (dateAtm > birthdayDay) {
@@ -64,13 +64,29 @@ const Birthday = ({day, month }) => {
     }, 1000);
   }, [currentYear, day, isItBday, month]);
 
-
   return (
-    <div className='page'>
-      <span><FontAwesomeIcon icon={faClock}/>  NCPC 2023</span>
-      <Countdown countdownData={state}/>
+    <div className="page">
+      <div>
+      <span className="type">
+        <FontAwesomeIcon icon={faClock} /> NCPC 2023
+      </span>
+      </div>
+     
+      <div className="type">
+       <Typing />
+      </div>
+      <Countdown countdownData={state} />
+      <div className="caption">
+        <h5>Hosted By</h5>
+        <h5>
+          Department of Computer Science and Engineering <br />
+          (CSE)
+        </h5>
+        <p>Jahangirnagar University</p>
+       <div><Button variant="danger">Register Now  <FontAwesomeIcon icon={faReply} /></Button></div> 
+
+      </div>
     </div>
-   
   );
 };
 
