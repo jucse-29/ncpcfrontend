@@ -170,14 +170,14 @@ a {
   font-size: 400;
 }
 .type{
-  margin-top: 70px;
+  margin-top: 20px;
   color:#7f78d2;
   font-weight: 300;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 .caption{
   font-weight: 400;
-  color: #cc3030;
+  color:aqua;
   margin-top: 70px;
 }
 .button_reg{
